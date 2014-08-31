@@ -1,0 +1,9 @@
+function  addFunction(a,b, callback){
+	var result =  a+ b;
+	callback(result);
+}
+
+addFunction(2,3, function(num){
+	console.log("callback Called!" + num);
+});
+
